@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d3e0e5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #00000046;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #4a7c9c;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #4a6ba0;
+  color: white;
+}
+
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.judul-galeri {
+  font-size: 32px;
+  color: #596bb0;
+  margin-bottom: 10px;
+}
+
+.deskripsi-galeri {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.galeri-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.galeri-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeri-item:hover {
+  transform: scale(1.05);
+}
+
+.galeri-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.galeri-item p {
+  font-size: 14px;
+}
+
+.galeri-item a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
